@@ -6,7 +6,6 @@ namespace LAB5
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
             TrainingCourse course = new TrainingCourse();
 
             bool isRunning = true;
