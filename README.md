@@ -68,16 +68,16 @@ classDiagram
     }
 
     %% Relationships
-    User <|-- Student : Inheritance
-    IMember <|.. Student : Realization
+    User <|-- Student
+    IMember <|.. Student
     
-    User <|-- Teacher : Inheritance
-    IMember <|.. Teacher : Realization
-    ISpeaker <|.. Teacher : Realization
+    User <|-- Teacher
+    IMember <|.. Teacher
+    ISpeaker <|.. Teacher
     
-    User <|-- Guest : Inheritance
-    IMember <|.. Guest : Realization
-    ISpeaker <|.. Guest : Realization
+    User <|-- Guest
+    IMember <|.. Guest
+    ISpeaker <|.. Guest
 
-    TrainingCourse o-- User : Aggregation
-    TrainingCourse o-- ISpeaker : Aggregation
+    TrainingCourse o-- User
+    TrainingCourse o-- ISpeaker
