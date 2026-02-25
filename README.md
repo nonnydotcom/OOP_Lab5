@@ -67,16 +67,17 @@ classDiagram
         +ShowAllSpeakers()
     }
 
-    User <|-- Student
-    IMember <|.. Student
+    %% Relationships
+    User <|-- Student : Inheritance
+    IMember <|.. Student : Realization
     
-    User <|-- Teacher
-    IMember <|.. Teacher
-    ISpeaker <|.. Teacher
+    User <|-- Teacher : Inheritance
+    IMember <|.. Teacher : Realization
+    ISpeaker <|.. Teacher : Realization
     
-    User <|-- Guest
-    IMember <|.. Guest
-    ISpeaker <|.. Guest
+    User <|-- Guest : Inheritance
+    IMember <|.. Guest : Realization
+    ISpeaker <|.. Guest : Realization
 
-    TrainingCourse o-- User
-    TrainingCourse o-- ISpeaker
+    TrainingCourse o-- User : Aggregation
+    TrainingCourse o-- ISpeaker : Aggregation
